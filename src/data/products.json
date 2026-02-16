@@ -10,5 +10,15 @@
   {"sku":"CB-LAN-10M","name":"LAN Cable CAT6 10m","category":"Cable","price":120,"stock":40,"warranty_months":0,"tags":["สายแลน","cat6"]},
   {"sku":"CAM-1080P","name":"Webcam 1080p","category":"Accessory","price":790,"stock":9,"warranty_months":12,"tags":["เว็บแคม","เรียนออนไลน์"]},
   {"sku":"HS-USB","name":"USB Headset","category":"Audio","price":650,"stock":8,"warranty_months":12,"tags":["หูฟัง","ไมค์","usb"]},
-  {"sku":"UPS-650VA","name":"UPS 650VA","category":"Power","price":2190,"stock":3,"warranty_months":24,"tags":["ups","สำรองไฟ"]}
+  {"sku":"UPS-650VA","name":"UPS 650VA","category":"Power","price":2190,"stock":3,"warranty_months":24,"tags":["ups","สำรองไฟ"]},
+  {"sku":"MON-27QHD","name":"Monitor 27\" QHD 144Hz","category":"Monitor","price":5890,"stock":2,"warranty_months":36,"tags":["จอ","27นิ้ว","qhd","gaming"]},
+  {"sku":"KB-MECH-RGB","name":"Mechanical Keyboard RGB","category":"Keyboard","price":2490,"stock":8,"warranty_months":24,"tags":["คีย์บอร์ด","เมคานิคัล","rgb","gaming"]},
+  {"sku":"MS-WIRELESS","name":"Wireless Mouse 2.4GHz","category":"Mouse","price":590,"stock":20,"warranty_months":12,"tags":["เมาส์","ไร้สาย","2.4ghz"]},
+  {"sku":"CB-USBC-2M","name":"USB Type-C Cable 2m","category":"Cable","price":250,"stock":30,"warranty_months":0,"tags":["สาย","usb-c","2เมตร"]},
+  {"sku":"ACC-MONSTAND","name":"Adjustable Monitor Stand","category":"Accessory","price":1290,"stock":6,"warranty_months":12,"tags":["แท่นจอ","ปรับความสูง"]},
+  {"sku":"ACC-COOLPAD","name":"Laptop Cooling Pad 15.6\"","category":"Accessory","price":890,"stock":11,"warranty_months":12,"tags":["แป็ด","ระบายความร้อน","แล็ปท็อป"]},
+  {"sku":"HD-SSD-500GB","name":"Portable SSD 500GB","category":"Storage","price":1390,"stock":14,"warranty_months":36,"tags":["ssd","500gb","external"]},
+  {"sku":"ACC-LAMP-LED","name":"LED Desk Lamp 10W","category":"Lighting","price":690,"stock":15,"warranty_months":24,"tags":["โคม","ไฟ","led","ประหยัดไฟ"]},
+  {"sku":"ACC-MOUSEPAD-L","name":"Gaming Mouse Pad Large","category":"Accessory","price":450,"stock":22,"warranty_months":0,"tags":["แพด","เมาส์","gaming"]},
+  {"sku":"CB-HDMI-2M","name":"HDMI Cable 2.1 2m","category":"Cable","price":380,"stock":25,"warranty_months":0,"tags":["hdmi","สาย","2เมตร"]}
 ]
