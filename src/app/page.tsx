@@ -81,35 +81,35 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen p-6 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold">IT Shop Voice Q&A (Web Speech)</h1>
-      <p className="text-sm opacity-80 mt-2">
+    <main className="min-h-screen p-8 max-w-4xl mx-auto bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <h1 className="text-4xl font-bold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">🎙️ IT Shop Voice Q&A</h1>
+      <p className="text-lg text-center text-gray-600 dark:text-gray-300 mb-8">
         กดเริ่มแล้วพูด เช่น “มี SSD 1TB ไหม ราคาเท่าไหร่”
       </p>
 
-      <div className="mt-6 flex gap-3">
+      <div className="flex justify-center gap-4 mb-8">
         {!isListening ? (
-          <button className="px-4 py-2 rounded bg-black text-white" onClick={start}>
-            เริ่มพูด
+          <button className="px-6 py-3 rounded-full bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold shadow-lg transform hover:scale-105 transition-all duration-200" onClick={start}>
+            🎤 เริ่มพูด
           </button>
         ) : (
-          <button className="px-4 py-2 rounded bg-red-600 text-white" onClick={stop}>
-            หยุด
+          <button className="px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold shadow-lg transform hover:scale-105 transition-all duration-200" onClick={stop}>
+            ⏹️ หยุด
           </button>
         )}
-        <div className="px-3 py-2 rounded border text-sm">{status}</div>
+        <div className="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-700 text-center text-sm font-medium shadow-md">{status}</div>
       </div>
 
-      <section className="mt-8 space-y-4">
-        <div className="p-4 rounded border">
-          <div className="font-semibold">ข้อความที่ถอดเสียง</div>
-          <div className="mt-2 text-sm">{result.transcript ?? "-"}</div>
+      <section className="space-y-6">
+        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-xl p-6 border-0">
+          <div className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">📝 ข้อความที่ถอดเสียง</div>
+          <div className="text-base text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">{result.transcript ?? "ยังไม่มีข้อความ"}</div>
         </div>
 
-        <div className="p-4 rounded border">
-          <div className="font-semibold">คำตอบ</div>
-          <div className="mt-2 text-sm">{result.answer ?? "-"}</div>
-          {result.error && <div className="mt-2 text-sm text-red-600">{result.error}</div>}
+        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-xl p-6 border-0">
+          <div className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">💬 คำตอบ</div>
+          <div className="text-base text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">{result.answer ?? "ยังไม่มีคำตอบ"}</div>
+          {result.error && <div className="mt-3 text-sm text-red-500 bg-red-50 dark:bg-red-900 p-3 rounded-lg">{result.error}</div>}
         </div>
       </section>
     </main>
